@@ -9,18 +9,18 @@
 /* Header styles */
 
 header {
-	
+
 	display: table;
 	width: 100%;
-	background-color: $color-spot-1;
-	
+	background-color: $color-spot-3;
+
 	@include vendorize("transition", background-color 0.125s ease-in);
 
 	.container,
 	.content { height: inherit; }
 
 	.container {
-		display: table-cell; 
+		display: table-cell;
 		vertical-align: middle;
 	}
 
@@ -39,9 +39,9 @@ header {
 	}
 
 	#logo {
-		
+
 		margin: 0 !important;
-		@include background("/images/logo-white.svg", auto 75%, left center);
+		@include background("/images/revuc-logo.svg", auto 75%, left center);
 
 		.label {
 			color: white;
@@ -54,7 +54,7 @@ header {
 	/* Responsive menu navigation */
 
 	.ss-header-navigation {
-		background-color: $color-spot-1;
+		background-color: $color-spot-3;
 		@include vendorize("transition", left 0.18s ease-in-out);
 		a, span { margin-top: 0; }
 	}
@@ -128,13 +128,13 @@ header {
 	/* Hamburger menu */
 
 	.ss-header-navigation-toggle { @include hamburger(30px, 3px, rgba(white, 0.65)); }
-	
+
 	.ss-header-navigation-toggle,
 	.ss-header-navigation-toggle:before,
 	.ss-header-navigation-toggle:after {
 		@include vendorize("transition", background-color 0.18s ease-in-out);
 	}
-	
+
 	.ss-header-navigation:not(.expanded) {
 		left: -100vw;
 		& ~ .ss-header-navigation-toggle,
@@ -179,15 +179,15 @@ header {
 		padding: 0;
 
 		li {
-			
+
 			display: inline-block;
 			padding: 3px 20px 5px;
-			border: 2px solid $color-spot-1;
+			border: 2px solid $color-spot-3;
 			border-radius: 18px;
 			cursor: pointer;
 
 			@include vendorize("transition", 0.18s border-color ease-in-out);
-			@include mouseover(border-color, $color-spot-2);
+			@include mouseover(border-color, #d6d6d6);
 
 			a {
 				color: rgba(white, 0.84);
@@ -198,7 +198,7 @@ header {
 
 		li:not(:first-child) { margin-left: 20px; }
 		li:hover a { color: white; }
-	
+
 	}
 
 	$indicator-height: 2px;
@@ -219,13 +219,13 @@ header {
 		display: block;
 		width: 0vw;
 		height: $indicator-height;
-		background-color: $color-spot-2;
+		background-image: linear-gradient($color-spot-1, $color-spot-2);
 		@include vendorize("transition", width 0.35s ease-in);
 	}
 
 	.indicator:before { left: 0; }
 	.indicator:after { right: 0; }
-	
+
 }
 
 header:hover .indicator:before,
