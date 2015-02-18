@@ -82,6 +82,17 @@ body {
 
 	}
 
+	& > section.fullscreen-dark {
+
+		display: table;
+		width: 100%;
+		height: 100vh;
+
+		.container { display: table-cell; vertical-align: middle; }
+		.content { display: table; }
+
+	}
+
 	& > .dark .content {
 		&, a { @extend %light; }
 	}
@@ -124,18 +135,18 @@ ul, ol {
 
 	display: block;
 	margin-top: $ss-type-copy-point-size * 0.5;
-	padding: 14px 22px;
+	padding: 22px 22px;
 	min-width: 220px;
-	border-radius: 14px;
+	border-radius: 12px;
 	border: none;
 
 	@include mouseout(background-color, $color-spot-1);
 	@include mouseover(background-color, $color-spot-2);
 
 	@include vendorize(transition, (
-		color 0.24s ease-in-out,
-		background-color 0.24s ease-in-out,
-		border-color 0.24s ease-in-out
+		color 1s ease-in-out,
+		background-color 1s ease-in-out,
+		border-color 1s ease-in-out
 	));
 
 }

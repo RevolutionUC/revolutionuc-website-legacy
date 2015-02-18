@@ -10,7 +10,7 @@
 
 footer {
 
-	.content { padding: 32px 0px; }
+	.content { padding: 25px 0px; }
 
 	/* Branding */
 
@@ -27,7 +27,7 @@ footer {
 	.ss-footer-navigation {
 
 		li a {
-			color: $color-type-default;
+			color: $color-spot-3;
 			@include vendorize("transition", opacity 0.14s ease-in-out);
 			@include mouseout(opacity, 0.5);
 		}
