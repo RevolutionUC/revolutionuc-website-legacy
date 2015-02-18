@@ -170,13 +170,13 @@ input[type="password"] {
 
 	height: 53px;
 
-// 	min-width: 220px;
-// 	height: 38px;
-// 	border: 1px solid darken($color-gray-1, 14%);
-// 	border-radius: 8px;
-// 	background-color: white;
-// 	@include same(padding-left, padding-right, 10px);
-// 	@include vendorize(outline, none);
+  min-width: 220px;
+	height: 38px;
+ 	border: 1px solid darken($color-gray-1, 14%);
+ 	border-radius: 8px;
+ 	background-color: white;
+ 	@include same(padding-left, padding-right, 10px);
+ 	@include vendorize(outline, none);
 
 }
 

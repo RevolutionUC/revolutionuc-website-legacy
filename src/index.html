@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 
 	<!-- Content metadata -->
-	<title>Startup Sass</title>
+	<title>Revolution UC</title>
 	<meta name="description" content="Small, responsive scaffolding designed to accelerate your web project">
 	<meta name="author" content="Michael Zalla (https://github.com/MichaelZalla)">
 
@@ -17,8 +17,8 @@
 
 	<!-- Favicons -->
 	<!--[if IE]><link rel="shortcut icon" href="favicon.ico?v=0.0.1" /><![endif]-->
-	<link rel="icon" type="image/png" href="/favicon-32.png?v=0.0.1" sizes="32x32" />
-	<link rel="icon" type="image/png" href="/favicon-16.png?v=0.0.1" sizes="16x16" />
+	<link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="/favicon-16.png" sizes="16x16" />
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="/css/startup-sass.min.css?v=0.0.1">
@@ -33,8 +33,8 @@
 
 				<!-- Branding -->
 				<div class="left">
-					<a href="#" id="logo">
-						<span class="label">RevolutionUC</span>
+					<a href="#" id="logo" data-scroll-nav="0">
+						<span class="label">Revolution UC</span>
 					</a>
 				</div>
 
@@ -44,10 +44,10 @@
 						<div class="container">
 							<div class="content dark">
 								<ul>
-									<li><a href="#"><span class="label">About&ensp;Us</span></a></li>
-									<li><a href="#"><span class="label">Sponsors</span></a></li>
-									<li><a href="#"><span class="label">F.A.Q.</span></a></li>
-									<li><a href="#"><span class="label">Connect</span></a></li>
+									<li><a data-scroll-nav="2"><span class="label">FAQ</span></a></li>
+									<li><a data-scroll-nav="3"><span class="label">Schedule</span></a></li>
+									<li><a data-scroll-nav="4"><span class="label">Sponsors</span></a></li>
+									<li><a data-scroll-nav="5"><span class="label">Contact</span></a></li>
 								</ul>
 							</div>
 						</div>
@@ -57,22 +57,59 @@
 
 			</div>
 		</div>
-		<div class="indicator"></div>
+		<!-- <div class="indicator"></div> -->
 	</header>
 
 	<!-- Content section -->
-	<section id="section1" class="fullscreen">
+	<section id="section1" data-scroll-index="0" class="fullscreen">
 		<div class="container">
 			<div class="content">
 
 				<h1 class="center" style="margin:0;">Coming Soon</h1>
 
+
+			</div>
+		</div>
+	</section>
+	<section id="faq" data-scroll-index="2" class="fullscreen">
+		<div class="container">
+			<div class="content">
+
+				<h1 class="center" style="margin:0;">FAQ goes here</h1>
+
+			</div>
+		</div>
+	</section>
+	<section id="schedule" data-scroll-index="3" class="fullscreen">
+		<div class="container">
+			<div class="content">
+
+				<h1 class="center" style="margin:0;">Schedule goes here</h1>
+
+			</div>
+		</div>
+	</section>
+	<section id="sponsors" data-scroll-index="4" class="fullscreen">
+		<div class="container">
+			<div class="content">
+
+				<h1 class="center" style="margin:0;">Sponsors go here</h1>
+
+			</div>
+		</div>
+	</section>
+	<section id="sponsors" data-scroll-index="5" class="fullscreen">
+		<div class="container">
+			<div class="content">
+
+				<h1 class="center" style="margin:0;">Contact us!</h1>
+
 			</div>
 		</div>
 	</section>
 
-	<!-- Site footer -->
-	<footer id="footer">
+		<!-- Site footer -->
+	<footer id="footer" data-scroll-index="5" class="fullscreen">
 		<div class="container">
 			<div class="content">
 				<div class="row">
@@ -110,9 +147,8 @@
 					<!-- Social -->
 					<div class="column small-12 medium-2 ss-footer-social">
 						<ul>
-							<li><a href="#" class="facebook" alt="Facebook"><p>Facebook</p></a></li>
-							<li><a href="#" class="twitter" alt="Twitter"><p>Twitter</p></a></li>
-							<li><a href="#" class="instagram" alt="Instagram"><p>Instagram</p></a></li>
+							<li><a href="https://www.facebook.com/RevolutionUC" class="facebook" alt="Facebook"><p>Facebook</p></a></li>
+							<li><a href="https://twitter.com/Revolution_UC" class="twitter" alt="Twitter"><p>Twitter</p></a></li>
 						</ul>
 					</div>
 
@@ -130,12 +166,32 @@
 	<script src="/js/vendor/jquery/plugins/jquery-scrollIt.min.js"></script>
 	<script>
 		$(function() {
-			// Set up an event listener for menu screen transitions
-			// Parent element wraps the hamburger menu's pseudo-elements
 			$('.ss-nav-menu-toggle').parent().on('mouseup', function(e) {
 				$('.ss-nav-menu').toggleClass('expanded');
 			});
 		});
+
+		$(function() {
+	$('.ss-header-navigation-toggle').parent().on('click', function(e) {
+		$('.ss-header-navigation').toggleClass('expanded');
+	});
+
+	$.scrollIt({
+		easing: 'easeInOutCubic',
+		scrollTime: 1000,
+		activeClass: 'active',
+		topOffset: -1 * $('header').outerHeight()
+	});
+
+	var headerWaypoint = new Waypoint({
+		element: document.getElementsByTagName('header'),
+		offset: -225,
+		handler: function() {
+			$('header').toggleClass('minimal');
+		}
+	});
+
+});
 	</script>
 
 </body>
