@@ -55,9 +55,9 @@ footer {
 
 		a p { @extend %hide-text; }
 
-		a.facebook 	{ @include background("../images/social-logo-128x128-facebook.png"); }
-		a.twitter 	{ @include background("../images/social-logo-128x128-twitter.png"); }
-		a.instagram { @include background("../images/social-logo-128x128-instagram.png"); }
+		a.facebook 	{ @include background("/images/social-logo-128x128-facebook.png"); }
+		a.twitter 	{ @include background("/images/social-logo-128x128-twitter.png"); }
+		a.instagram { @include background("/images/social-logo-128x128-instagram.png");}
 
 		li:not(:first-child) { margin-left: 14px; }
 
