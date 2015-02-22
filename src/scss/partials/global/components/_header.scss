@@ -41,7 +41,13 @@ header {
 	#logo {
 
 		margin: 0 !important;
-		@include background("/images/revuc-logo.svg", auto 75%, left center);
+		@include background("/images/revuc-logo-outline.svg", auto 75%, left center);
+		@include mouseout(opacity, 0.8);
+		@include mouseover(opacity, 1);
+
+		@include vendorize(transition, (
+		opacity .5s ease-in-out
+		));
 
 		.label {
 			color: white;
@@ -186,7 +192,7 @@ header {
 			border-radius: 18px;
 			cursor: pointer;
 
-			@include vendorize("transition", 0.18s border-color ease-in-out);
+			@include vendorize("transition", 0.50s border-color ease-in-out);
 			@include mouseover(border-color, #d6d6d6);
 
 			a {
