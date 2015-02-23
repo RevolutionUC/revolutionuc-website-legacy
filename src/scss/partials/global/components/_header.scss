@@ -41,7 +41,7 @@ header {
 	#logo {
 
 		margin: 0 !important;
-		@include background("/images/revuc-logo-outline.svg", auto 75%, left center);
+		@include background("../images/logos/revuc-logo-outline.svg", auto 75%, left center);
 		@include mouseout(opacity, 0.8);
 		@include mouseover(opacity, 1);
 

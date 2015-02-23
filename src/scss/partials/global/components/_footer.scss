@@ -10,16 +10,18 @@
 
 footer {
 
-	.content { padding: 25px 0px; }
+	.content { padding: 32px 0px; }
 
 	/* Branding */
 
 	$brandmark-opacity: 0.84;
 	.ss-footer-branding a {
 		margin-top: 4px;
+		border: 2px solid rgba(black, $brandmark-opacity);
 		opacity: $brandmark-opacity;
 		@include same(width, height, 48px);
-		@include background("/images/revuc-logo.svg", 62%);
+		@include background("../images/logos/revuc-logo-outline.svg", 100%);
+		@extend %grayscale;
 	}
 
 	/* Navigation */
@@ -27,7 +29,8 @@ footer {
 	.ss-footer-navigation {
 
 		li a {
-			color: $color-spot-3;
+			display: inline-block;
+			color: $color-type-default;
 			@include vendorize("transition", opacity 0.14s ease-in-out);
 			@include mouseout(opacity, 0.5);
 		}
@@ -55,9 +58,10 @@ footer {
 
 		a p { @extend %hide-text; }
 
-		a.facebook 	{ @include background("/images/social-logo-128x128-facebook.png"); }
-		a.twitter 	{ @include background("/images/social-logo-128x128-twitter.png"); }
-		a.instagram { @include background("/images/social-logo-128x128-instagram.png");}
+		a.facebook 	{ @include background("/images/logos/social-facebook.svg"); }
+		a.twitter 	{ @include background("/images/logos/social-twitter.svg"); }
+		a.group { @include background("/images/logos/social-group.svg"); }
+		a.instagram { @include background("/images/logos/social-instagram.svg"); }
 
 		li:not(:first-child) { margin-left: 14px; }
 
