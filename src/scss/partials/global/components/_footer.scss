@@ -10,7 +10,7 @@
 
 footer {
 
-	.content { padding: 32px 0px; }
+	.content { padding: 0px 0px;}
 
 	/* Branding */
 
@@ -61,7 +61,7 @@ footer {
 		a.facebook 	{ @include background("/images/logos/social-facebook.svg"); }
 		a.twitter 	{ @include background("/images/logos/social-twitter.svg"); }
 		a.group { @include background("/images/logos/social-group.svg"); }
-		a.instagram { @include background("/images/logos/social-instagram.svg"); }
+		a.instagram { @include background("/images/logos/social-instagram.svg");}
 
 		li:not(:first-child) { margin-left: 14px; }
 
@@ -97,7 +97,7 @@ footer {
 
 footer {
 
-	.content { padding-bottom: 45px; }
+	.content { padding-bottom: 20px; }
 
 }
 

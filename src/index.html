@@ -58,13 +58,14 @@
 	</header>
 
 	<!-- Content section -->
-	<section id="section1" data-scroll-index="0" class="fullscreen dark" style="background-image:url(../images/background/revuc-background.png); background-position:center; background-repeat:no-repeat;">
+	<section class="fullscreen dark" id="section1" data-scroll-index="0" style="background-image:url(../images/background/revuc-background.png); background-position:center; background-repeat:no-repeat;">
 		<div class="container">
 			<div class="content">
 				<img src="/images/logos/RevUCLogo_Long.svg">
 			</div>
-			<div class="content">
-				<a class="button" href="/learn-more.html">Learn More</a>
+				<div class="content">
+					<a class="button" href="/learn-more.html">Learn More</a>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -72,8 +73,30 @@
 	<section id="about" data-scroll-index="1" class="fullscreen">
 		<div class="container">
 			<div class="content">
-				<h1 class="left" style="margin:0;">What is RevolutionUC?</h1>
-				<p> </p>
+				<h2 class="left" style="margin:0;">What is RevolutionUC?</h2>
+					<p>RevolutionUC is a student hackathon in which we invite students from across the midwest to partake in a weekend of code, community, and self-improvement.</p>
+				<h2 class="left" style="margin:0;">Let’s build together</h2>
+					<p>
+						“Don't simply dream, create. Don't simply create, ship. Don't simply ship, dream.”<br>
+						― Ryan Lilly<br><br>
+ 							Projects are one of the key elements in any hackathon. At RevolutionUC, you have 36 hours to create something awesome from start to finish with your team. We’ve seen awesome mobile apps, web applications, and hardware hacks in the past and we’re excited to see what will be made this spring.
+					</p>
+				<h2 class="left" style="margin:0;">Let’s learn together</h2>
+					<p>
+						“Tell me and I forget, teach me and I may remember, involve me and I learn.”<br>
+						― Benjamin Franklin<br><br>
+						Learning is essential to a hackathon. Whether you’re a veteran hacker or a first-timer, we’re excited for you to learn something new! We’ll have exciting tech talks throughout the event and we encourage all our attendees to learn something new!
+						<br>
+						New to the hackathon scene? Awesome! We’re excited to have you. We’re more than willing to help you get you started with your first hack! With our team of mentors, assembled from our organizer team and software engineers from our sponsors, we’ll help get you started and get you past the bugs and bumps.
+						</p>
+				<h2 class="left" style="margin:0;">Let’s grow together</h2>
+					<p>
+						“Strength lies in differences, not in similarities”<br>
+ ― Stephen R. Covey<br><br>
+						Hackathons are more than just a competition or showcase of technical skill. At RevolutionUC, we strive to create an all-inclusive community that acts as an outlet in which we can join our peers and share our passion for all the incredible things that can be done through programming. We’re excited to share this ethos with all of our attendees and come together to grow the hacker community here in Cincinnati.
+					</p>
+				<h2 class="left" style="margin:0;">Let’s start a revolution</h2>
+					<p>Join us on April 10th through the 12th to build, learn, and grow together!</p>
 			</div>
 		</div>
 	</section>
@@ -181,36 +204,37 @@
 	<script src="/js/vendor/jquery/jquery.min.js"></script>
 	<script src="/js/vendor/jquery/plugins/jquery-waypoints.min.js"></script>
 	<script src="/js/vendor/jquery/plugins/jquery-scrollIt.min.js"></script>
+	<script src="js/modernizr.js"></script>
 	<script>
-		$(function() {
-			$('.ss-nav-menu-toggle').parent().on('mouseup', function(e) {
-				$('.ss-nav-menu').toggleClass('expanded');
+			$(function() {
+				$('.ss-nav-menu-toggle').parent().on('mouseup', function(e) {
+					$('.ss-nav-menu').toggleClass('expanded');
+				});
 			});
+
+			$(function() {
+		$('.ss-header-navigation-toggle').parent().on('click', function(e) {
+			$('.ss-header-navigation').toggleClass('expanded');
 		});
 
-		$(function() {
-	$('.ss-header-navigation-toggle').parent().on('click', function(e) {
-		$('.ss-header-navigation').toggleClass('expanded');
-	});
+		$.scrollIt({
+			easing: 'easeInOutCubic',
+			scrollTime: 1000,
+			upKey: 38,             // key code to navigate to the next section
+			downKey: 40,
+			activeClass: 'active',
+			topOffset: -1 * $('header').outerHeight()
+		});
 
-	$.scrollIt({
-		easing: 'easeInOutCubic',
-		scrollTime: 1000,
-		upKey: 38,             // key code to navigate to the next section
-		downKey: 40,
-		activeClass: 'active',
-		topOffset: -1 * $('header').outerHeight()
-	});
+		var headerWaypoint = new Waypoint({
+			element: document.getElementsByTagName('header'),
+			offset: -250,
+			handler: function() {
+				$('header').toggleClass('minimal');
+			}
+		});
 
-	var headerWaypoint = new Waypoint({
-		element: document.getElementsByTagName('header'),
-		offset: -250,
-		handler: function() {
-			$('header').toggleClass('minimal');
-		}
 	});
-
-});
 	</script>
 
 </body>
