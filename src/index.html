@@ -1,157 +1,215 @@
 <!-- StartupSass v0.0.1 -->
 <!doctype html>
 <html lang="en">
+
 <head>
 
-	<meta charset="utf-8">
+  <meta charset="utf-8">
 
-	<!-- Content metadata -->
-	<title>Revolution UC</title>
-	<meta name="description" content="Small, responsive scaffolding designed to accelerate your web project">
-	<meta name="author" content="Michael Zalla (https://github.com/MichaelZalla)">
+  <!-- Content metadata -->
+  <title>Revolution UC</title>
+  <meta name="description" content="Small, responsive scaffolding designed to accelerate your web project">
+  <meta name="author" content="Michael Zalla (https://github.com/MichaelZalla)">
 
-	<!-- Behavioral metadata -->
-	<meta http-equiv="content-type" content="text/html;charset=utf-8">
-	<meta http-equiv="X-UI-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+  <!-- Behavioral metadata -->
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UI-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
 
-	<!-- Favicons -->
-	<!-- [if IE]><link rel="shortcut icon" href="favicon.ico?v=0.0.1" /><![endif] -->
-	<link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32" />
-	<link rel="icon" type="image/png" href="/favicon-16.png" sizes="16x16" />
+  <!-- Favicons -->
+  <!-- [if IE]><link rel="shortcut icon" href="favicon.ico?v=0.0.1" /><![endif] -->
+  <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/favicon-16.png" sizes="16x16" />
 
-	<!-- Stylesheets -->
-	<link rel="stylesheet" href="/css/startup-sass.min.css?v=0.0.1">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/css/startup-sass.min.css?v=0.0.1">
 
 </head>
-<body>
 
-	<!-- Site header -->
-	<header id="header" class="fixed dark">
-		<div class="container">
-			<div class="content">
+<body id="landing">
 
-				<!-- Branding -->
-				<div class="left">
-					<a id="logo" data-scroll-nav="0"></a>
-				</div>
+  <!-- Site header -->
+  <header id="header" class="fixed dark">
+    <div class="container">
+      <div class="content">
 
-				<!-- Responsive navigation menu -->
-				<div class="right">
-					<section class="ss-header-navigation fullscreen">
-						<div class="container">
-							<div class="content dark">
-								<ul>
-									<li><a data-scroll-nav="1"><span class="label">About</span></a></li>
-									<li><a data-scroll-nav="2"><span class="label">Schedule</span></a></li>
-									<li><a data-scroll-nav="3"><span class="label">FAQ</span></a></li>
-									<li><a data-scroll-nav="4"><span class="label">Sponsors</span></a></li>
-									<!-- <li><a data-scroll-nav="5"><span class="label">Contact Us</span></a></li> -->
-								</ul>
-							</div>
-						</div>
-					</section>
-					<div class="ss-header-navigation-toggle"></div>
-				</div>
-			</div>
-		</div>
-	</header>
+        <!-- Branding -->
+        <div class="left">
+          <a id="logo" data-scroll-nav="0"></a>
+        </div>
 
-	<!-- Content section -->
-	<section class="fullscreen dark" id="section1" data-scroll-index="0" style="background-image:url(../images/background/revuc-background.png); background-position:center; background-repeat:no-repeat;">
-		<div class="container">
-			<div class="content">
-				<img src="/images/logos/RevUCLogo_Long.svg">
-			</div>
-				<div class="content">
-					<a class="button" href="/learn-more.html">Learn More</a>
-				</div>
-			</div>
-		</div>
-	</section>
+        <!-- Responsive navigation menu -->
+        <div class="right">
+          <section class="ss-header-navigation fullscreen">
+            <div class="container">
+              <div class="content dark">
+                <ul>
+                  <li>
+                    <a data-scroll-nav="1">
+                      <span class="label">About</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a data-scroll-nav="2">
+                      <span class="label">Schedule</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a data-scroll-nav="3">
+                      <span class="label">FAQ</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a data-scroll-nav="4">
+                      <span class="label">Sponsors</span>
+                    </a>
+                  </li>
+                  <!-- <li><a data-scroll-nav="5"><span class="label">Contact Us</span></a></li> -->
+                </ul>
+              </div>
+            </div>
+          </section>
+          <div class="ss-header-navigation-toggle"></div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-	<section id="about" data-scroll-index="1" class="fullscreen">
-		<div class="container">
-			<div class="content">
-				<h2 class="left" style="margin:0;">What is RevolutionUC?</h2>
-					<p>RevolutionUC is a student hackathon in which we invite students from across the midwest to partake in a weekend of code, community, and self-improvement.</p>
-				<h2 class="left" style="margin:0;">Let’s build together</h2>
-					<p>
-						“Don't simply dream, create. Don't simply create, ship. Don't simply ship, dream.”<br>
-						― Ryan Lilly<br><br>
+  <!-- Content section -->
+  <section class="fullscreen dark" id="section1" data-scroll-index="0" style="background-image:url(../images/background/revuc-background.png); background-position:center; background-repeat:no-repeat;">
+    <div class="container">
+      <div class="content">
+        <img src="/images/logos/RevUCLogo_Long.svg">
+      </div>
+      <div class="content">
+        <a class="button" href="/learn-more.html">Learn More</a>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section id="about" data-scroll-index="1" class="fullscreen">
+    <div class="container">
+      <div class="content">
+
+        <div class="row">
+          <div class="column small-12 medium-6">
+            <h2 style="margin:0;"></h2>
+            <span class="quote">"Foo bar biz baz"</span>
+            <span class="attribution">Ben Franklin</span>
+            <p>Learning is essential to a hackathon. Whether you’re a veteran hacker or a first-timer, we’re excited for you to learn something new! We’ll have exciting tech talks throughout the event and we encourage all our attendees to learn something
+              new!
+              <p>
+          </div>
+          <div class="column small-12 medium-6">
+            <img src="http://placekitten.com/350/350">
+            <span class="caption"></span>
+          </div>
+        </div>
+
+
+				<h2 style="margin:0;">What is RevolutionUC?></h2>
+				<p>RevolutionUC is a student hackathon in which we invite students from across the midwest to partake in a weekend of code, community, and self-improvement.</p>
+				<h2 style="margin:0;">Let’s build together</h2>
+				<p>
+					“Don't simply dream, create. Don't simply create, ship. Don't simply ship, dream.”<br>
+					― Ryan Lilly<br><br>
  							Projects are one of the key elements in any hackathon. At RevolutionUC, you have 36 hours to create something awesome from start to finish with your team. We’ve seen awesome mobile apps, web applications, and hardware hacks in the past and we’re excited to see what will be made this spring.
-					</p>
-				<h2 class="left" style="margin:0;">Let’s learn together</h2>
-					<p>
-						“Tell me and I forget, teach me and I may remember, involve me and I learn.”<br>
-						― Benjamin Franklin<br><br>
-						Learning is essential to a hackathon. Whether you’re a veteran hacker or a first-timer, we’re excited for you to learn something new! We’ll have exciting tech talks throughout the event and we encourage all our attendees to learn something new!
-						<br>
-						New to the hackathon scene? Awesome! We’re excited to have you. We’re more than willing to help you get you started with your first hack! With our team of mentors, assembled from our organizer team and software engineers from our sponsors, we’ll help get you started and get you past the bugs and bumps.
-						</p>
-				<h2 class="left" style="margin:0;">Let’s grow together</h2>
-					<p>
-						“Strength lies in differences, not in similarities”<br>
- ― Stephen R. Covey<br><br>
-						Hackathons are more than just a competition or showcase of technical skill. At RevolutionUC, we strive to create an all-inclusive community that acts as an outlet in which we can join our peers and share our passion for all the incredible things that can be done through programming. We’re excited to share this ethos with all of our attendees and come together to grow the hacker community here in Cincinnati.
-					</p>
-				<h2 class="left" style="margin:0;">Let’s start a revolution</h2>
-					<p>Join us on April 10th through the 12th to build, learn, and grow together!</p>
-			</div>
-		</div>
-	</section>
+				</p>
 
-	<section id="schedule" data-scroll-index="2" class="fullscreen dark" style="background-image:url(../images/background/Circuit.png); background-position:center; background-size: auto auto; background-repeat:no-repeat;">
-		<div class="container">
-			<div class="content">
+        <h2 style="margin:0;">Let’s learn together</h2>
+        <!--
+				FOllow a convention like this:
+				span.quote{Tell me and I forget, teach me and I may remember, involve me and I learn.}
+				span.attribution{Benjamin Frankling}
+				-->
+        <p>
 
-				<h2 class="center" style="margin:0;">We're still nailing down this year's schedule, but here's what last year looked like!</h2>
+          Learning is essential to a hackathon. Whether you’re a veteran hacker or a first-timer, we’re excited for you to learn something new! We’ll have exciting tech talks throughout the event and we encourage all our attendees to learn something new!
+          <br> New to the hackathon scene? Awesome! We’re excited to have you. We’re more than willing to help you get you started with your first hack! With our team of mentors, assembled from our organizer team and software engineers from our sponsors,
+          we’ll help get you started and get you past the bugs and bumps.
+        </p>
 
-			</div>
-			<div class="content">
-				<div class="column small-12 medium-4 ">
-						<h2>Friday</h2>
-						<p>8pm - Opening Ceremony</p>
-						<p>10pm - Idea forming workshop and team building.</p>
-						<p>11pm - Hacking begins.</p>
-				</div>
-				<div class="column small-12 medium-4">
-						<h2>Saturday</h2>
-						<p>All day - Hacking and tech-talks </p>
-				</div>
-				<div class="column small-12 medium-4">
-						<h2>Sunday</h2>
-						<p>11am - Your 36 Hours are up! Hacking ends.</p>
-						<p>12pm - Show us what you hacked at the project expo.</p>
-						<p>2pm - Closing ceremony</p>
-					</div>
-				</div>
-		</div>
-	</section>
-	<section id="faq" data-scroll-index="3" class="fullscreen">
-		<div class="container">
-			<div class="content">
-				<h1 class="center" style="margin:0;">FAQ</h1>
-					<h3>Do I need an idea or team to sign up?</h3></a>
-					<p>Nope! We'll be hosting an idea generation workshop to help people think of ideas to work on at the hackathon. So you should sign up regardless.</p></a>
-					<h3>What if I don't have any experience?</h3></a>
-					<p>We will have a top shelf team of veteran mentors to help you hit the ground running with ideas and guidance, plenty of opportunities to engage other talented and curious individuals like yourself and of course lots and lots of fun events right when you hit that rough patch. RevolutionUC, is a learning and sociable experience for people of all experience levels.</p></a>
-					<h3>What are some examples of projects?</h3></a>
-					<p>Check out some of the aswesome submissions we had last <a href="http://revuc.challengepost.com/submissions" style="color: #0CD2FF">fall</a>!</p></a>
-				  <h3>Where do we sleep?</h3></a>
-					<p>We will have a space near our hacking area set aside for attendees that want to sleep. We'll be buying large amounts of Red Bull and other caffeinated drinks so hopefully you won't have to.</p></a>
-					<h3>Where do we park?</h3></a>
-					<p>Parking will be in the <a href="http://usquareattheloop.com/parking" style="color: #0CD2FF">USquare East Garage</a></p></a>
-			</div>
-		</div>
-	</section>
+        <h2 style="margin:0;">Let’s grow together</h2>
+        <p>
+          “Strength lies in differences, not in similarities”
+          <br> ― Stephen R. Covey
+          <br>
+          <br> Hackathons are more than just a competition or showcase of technical skill. At RevolutionUC, we strive to create an all-inclusive community that acts as an outlet in which we can join our peers and share our passion for all the incredible things
+          that can be done through programming. We’re excited to share this ethos with all of our attendees and come together to grow the hacker community here in Cincinnati.
+        </p>
 
-	<section id="sponsors" data-scroll-index="4" class="fullscreen dark" style="background-image:url(../images/background/Circuit_Rev.png); background-position:center; background-size: auto auto; background-repeat:no-repeat;">
-		<div class="container">
-			<div class="content">
-				<h1 class="center" style="margin:0;">Sponsors</h1>
-			</div>
-			<!-- <div class="content">
+        <h2 style="margin:0;">Let’s start a revolution</h2>
+
+        <p>Join us on April 10th through the 12th to build, learn, and grow together!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule" data-scroll-index="2" class="fullscreen dark">
+    <div class="container">
+      <div class="content">
+
+        <h2 class="center" style="margin:0;">We're still nailing down this year's schedule,
+          <br>but here's what last year looked like!</h2>
+
+      </div>
+      <div class="content">
+        <div class="column small-12 medium-4 ">
+          <h2>Friday</h2>
+          <p>8pm - Opening Ceremony</p>
+          <p>10pm - Idea forming workshop and team building.</p>
+          <p>11pm - Hacking begins.</p>
+        </div>
+        <div class="column small-12 medium-4">
+          <h2>Saturday</h2>
+          <p>All day - Hacking and tech-talks </p>
+        </div>
+        <div class="column small-12 medium-4">
+          <h2>Sunday</h2>
+          <p>11am - Your 36 Hours are up! Hacking ends.</p>
+          <p>12pm - Show us what you hacked at the project expo.</p>
+          <p>2pm - Closing ceremony</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="faq" data-scroll-index="3" class="fullscreen">
+    <div class="container">
+      <div class="content">
+        <h1 class="center" style="margin:0;">FAQ</h1>
+        <h3>Do I need an idea or team to sign up?</h3>
+        </a>
+        <p>Nope! We'll be hosting an idea generation workshop to help people think of ideas to work on at the hackathon. So you should sign up regardless.</p>
+        </a>
+        <h3>What if I don't have any experience?</h3>
+        </a>
+        <p>We will have a top shelf team of veteran mentors to help you hit the ground running with ideas and guidance, plenty of opportunities to engage other talented and curious individuals like yourself and of course lots and lots of fun events right
+          when you hit that rough patch. RevolutionUC, is a learning and sociable experience for people of all experience levels.</p>
+        </a>
+        <h3>What are some examples of projects?</h3>
+        </a>
+        <p>Check out some of the aswesome submissions we had last <a href="http://revuc.challengepost.com/submissions" style="color: #0CD2FF">fall</a>!</p>
+        </a>
+        <h3>Where do we sleep?</h3>
+        </a>
+        <p>We will have a space near our hacking area set aside for attendees that want to sleep. We'll be buying large amounts of Red Bull and other caffeinated drinks so hopefully you won't have to.</p>
+        </a>
+        <h3>Where do we park?</h3>
+        </a>
+        <p>Parking will be in the <a href="http://usquareattheloop.com/parking" style="color: #0CD2FF">USquare East Garage</a>
+        </p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="sponsors" data-scroll-index="4" class="fullscreen dark">
+    <div class="container">
+      <div class="content">
+        <h1 class="center" style="margin:0;">Sponsors</h1>
+      </div>
+      <!-- <div class="content">
 				<h3 class="center" style="margin:0;">Title Sponsor Here</h3>
 			</div>
 			<div class="center column small-12 medium-4">
@@ -163,13 +221,14 @@
 			<div class="center column small-12 medium-4">
 				<p> Other Sponsor Logos Here </p>
 			</div> -->
-			<div class="content">
-				<p class = "center">Interested in sponsoring? Need to know more? Get in touch with us at <a href="mailto:info@revolutionuc.com" style="color: #0CD2FF">info@revolutionuc.com</a></p>
-			</div>
-		</div>
-	</section>
+      <div class="content">
+        <p class="center">Interested in sponsoring? Need to know more? Get in touch with us at <a href="mailto:info@revolutionuc.com" style="color: #0CD2FF">info@revolutionuc.com</a>
+        </p>
+      </div>
+    </div>
+  </section>
 
-	<!-- <section id="contact-us" data-scroll-index="5">
+  <!-- <section id="contact-us" data-scroll-index="5">
 		<div class="container">
 			<div class="content">
 				<h1 class="center" style="margin:0;">Contact Us!</h1>
@@ -177,65 +236,79 @@
 		</div>
 	</section> -->
 
-<!-- Site footer -->
-<footer id="footer" class="dark" data-scroll-index="5" style="background: #313131">
-		<div class="container">
-			<div class="content ss-footer-navigation">
-				<div class="row">
-					<div class="left column small-12 medium-6 row ss-footer-social">
-						<ul>
-							<li><a href="https://www.facebook.com/RevolutionUC" class="facebook" alt="Facebook"><p>Facebook</p></a></li>
-							<li><a href="https://www.twitter.com/revolution_uc" class="twitter" alt="Twitter"><p>Twitter</p></a></li>
-							<li><a href="https://www.facebook.com/groups/BearHacks" class="group" alt="Bearcat Hackers"><p>Bearcat Hackers</p></a></li>
-						</ul>
-					</div>
-					<div class="right column small-12 medium-6">
-						<a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf"><span class="label">RevolutionUC adheres to the MLH code of conduct</span></a>
-					</div>
-			</div>
-		</div>
-	</div>
-	</footer>
+  <!-- Site footer -->
+  <footer id="footer" class="dark" data-scroll-index="5" style="background: #313131">
+    <div class="container">
+      <div class="content ss-footer-navigation">
+        <div class="row">
+          <div class="left column small-12 medium-6 row ss-footer-social">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/RevolutionUC" class="facebook" alt="Facebook">
+                  <p>Facebook</p>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com/revolution_uc" class="twitter" alt="Twitter">
+                  <p>Twitter</p>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/groups/BearHacks" class="group" alt="Bearcat Hackers">
+                  <p>Bearcat Hackers</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="right column small-12 medium-6">
+            <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf">
+              <span class="label">RevolutionUC adheres to the MLH code of conduct</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-	<!-- LiveReload with grunt-contrib-watch (remove in production) -->
-	<script src="//localhost:35729/livereload.js"></script>
+  <!-- LiveReload with grunt-contrib-watch (remove in production) -->
+  <script src="//localhost:35729/livereload.js"></script>
 
-	<!-- Dependencies -->
-	<script src="/js/vendor/jquery/jquery.min.js"></script>
-	<script src="/js/vendor/jquery/plugins/jquery-waypoints.min.js"></script>
-	<script src="/js/vendor/jquery/plugins/jquery-scrollIt.min.js"></script>
-	<script src="js/modernizr.js"></script>
-	<script>
-			$(function() {
-				$('.ss-nav-menu-toggle').parent().on('mouseup', function(e) {
-					$('.ss-nav-menu').toggleClass('expanded');
-				});
-			});
+  <!-- Dependencies -->
+  <script src="/js/vendor/jquery/jquery.min.js"></script>
+  <script src="/js/vendor/jquery/plugins/jquery-waypoints.min.js"></script>
+  <script src="/js/vendor/jquery/plugins/jquery-scrollIt.min.js"></script>
+  <script src="js/modernizr.js"></script>
+  <script>
+    $(function() {
+    	$('.ss-nav-menu-toggle').parent().on('mouseup', function(e) {
+    		$('.ss-nav-menu').toggleClass('expanded');
+    	});
+    });
 
-			$(function() {
-		$('.ss-header-navigation-toggle').parent().on('click', function(e) {
-			$('.ss-header-navigation').toggleClass('expanded');
-		});
+    $(function() {
+    	$('.ss-header-navigation-toggle').parent().on('click', function(e) {
+    		$('.ss-header-navigation').toggleClass('expanded');
+    	});
 
-		$.scrollIt({
-			easing: 'easeInOutCubic',
-			scrollTime: 1000,
-			upKey: 38,             // key code to navigate to the next section
-			downKey: 40,
-			activeClass: 'active',
-			topOffset: -1 * $('header').outerHeight()
-		});
+    	$.scrollIt({
+    		easing: 'easeInOutCubic',
+    		scrollTime: 1000,
+    		upKey: 38, // key code to navigate to the next section
+    		downKey: 40,
+    		activeClass: 'active',
+    		topOffset: -1 * $('header').outerHeight()
+    	});
 
-		var headerWaypoint = new Waypoint({
-			element: document.getElementsByTagName('header'),
-			offset: -250,
-			handler: function() {
-				$('header').toggleClass('minimal');
-			}
-		});
+    	var headerWaypoint = new Waypoint({
+    		element: document.getElementsByTagName('header'),
+    		offset: -250,
+    		handler: function() {
+    			$('header').toggleClass('minimal');
+    		}
+    	});
 
-	});
-	</script>
+    });
+  </script>
 
 </body>
 

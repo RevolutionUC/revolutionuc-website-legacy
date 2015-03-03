@@ -1,0 +1,12 @@
+#landing {
+
+  .row {  }
+
+  section#schedule,
+  section#sponsors {
+
+      @include background("../images/background/Circuit.png");
+
+  }
+
+}
