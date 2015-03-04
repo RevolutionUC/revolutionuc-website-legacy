@@ -2,11 +2,21 @@
 
   .row {  }
 
-  section#schedule,
-  section#sponsors {
+  section#splash {
+
+    @include background("../images/background/revuc-background.png"); 
+
+  }
+
+  section#schedule {
 
       @include background("../images/background/Circuit.png");
 
   }
 
+  section#sponsors {
+
+      @include background("../images/background/Circuit_Rev.png");
+
+  }
 }
