@@ -5,3 +5,6 @@ RevolutionUC is a student hackathon in which we invite students from across the 
 Join us on April 10th through the 12th to build, learn, and grow together!
 
 ## TODO
+- Landing tagline
+- Integrate with backend
+- Add Registration interface
