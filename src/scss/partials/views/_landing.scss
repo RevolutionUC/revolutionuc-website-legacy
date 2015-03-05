@@ -20,6 +20,22 @@
 
   }
 
+  section#about {
+    @include background("../images/background/Circuit.png");
+  }
+
+  section#about-1 {
+    @include background("../images/photos/collab-bg.jpg");
+  }
+
+  section#about-2 {
+    @include background("../images/background/Circuit_Rev.png");
+  }
+
+  section#about-3 {
+    @include background("../images/photos/mentor-bg.jpg");
+  }
+
   section#register {
     @include background("../images/photos/students.jpg")
   }

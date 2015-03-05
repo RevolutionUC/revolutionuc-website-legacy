@@ -78,8 +78,23 @@ a, a:link, a:visited, a:hover, a:active {
 a:focus { @include vendorize(outline, none); }
 
 /* Display type */
+h1 {
+	&, &:before, &:after {
+		@extend %copy;
+		line-height: 1.35;
+		font-weight: $font-weight-bold;
+	}
+}
 
-h1, h2, h3, h4, h5, h6 {
+h2 {
+	&, &:before, &:after {
+		@extend %copy;
+		line-height: 1.35;
+		font-weight: $font-weight-semibold;
+	}
+}
+
+h3, h4, h5, h6 {
 	&, &:before, &:after {
 		@extend %copy;
 		line-height: 1.35;
@@ -109,6 +124,7 @@ h6, h6:before, h6:after {
 	font-weight: $font-weight-bold;
 	text-transform: uppercase;
 }
+
 
 /* Headings and Subheadings */
 
