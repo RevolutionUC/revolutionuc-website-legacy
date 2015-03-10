@@ -164,6 +164,141 @@ button,.button { @extend %button; }
 button { height: 38px; }
 .button { @extend %center; } // width: 100%; text-align: center;
 
+%button-up {
+	display: block;
+	margin-top: $ss-type-copy-point-size * 0.5;
+	padding: 22px 22px;
+	min-width: 220px;
+	border-radius: 12px;
+	border: none;
+
+	@include mouseout(background-color, transparent);
+	@include mouseover(background-color, $color-spot-2);
+
+	@include vendorize(transition, (
+		color 1s ease-in-out,
+		background-color 1s ease-in-out,
+		border-color 1s ease-in-out
+	));
+
+}
+
+button,.button-up { @extend %button-up; }
+button { height: 38px; }
+.button-up { @extend %center; } // width: 100%; text-align: center;
+
+%button-down {
+	@include background("../images/bottom-arrow.svg");
+	display: block;
+	margin-top: $ss-type-copy-point-size * 0.5;
+	padding: 22px 22px;
+	min-width: 220px;
+	border-radius: 12px;
+	border: none;
+
+	@include mouseout(background-color, $color-spot-1);
+	@include mouseover(background-color, $color-spot-2);
+
+	@include vendorize(transition, (
+		color 1s ease-in-out,
+		background-color 1s ease-in-out,
+		border-color 1s ease-in-out
+	));
+
+}
+
+button,.button-down { @extend %button-down; }
+button { height: 38px; }
+.button-down { @extend %center; } // width: 100%; text-align: center;
+
+.arrow-up {
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid black;
+	opacity: .25;
+	bottom: 0px;
+
+	@include mouseout(opacity, .25);
+	@include mouseover(opacity, .84);
+	@include vendorize(transition, (
+	opacity .5s ease-in-out
+	));
+}
+
+.arrow-up-white {
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid white;
+	opacity: .25;
+	bottom: 0px;
+
+	@include mouseout(opacity, .25);
+	@include mouseover(opacity, .84);
+	@include vendorize(transition, (
+	opacity .5s ease-in-out
+	));
+}
+
+.arrow-down {
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+
+	border-top: 20px solid black;
+	opacity: .25;
+	bottom: 0px;
+
+	@include mouseout(opacity, .25);
+	@include mouseover(opacity, .84);
+	@include vendorize(transition, (
+	opacity .5s ease-in-out
+	));
+}
+
+.arrow-down-white {
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+
+	border-top: 20px solid white;
+	opacity: .25;
+	bottom: 0px;
+
+	@include mouseout(opacity, .25);
+	@include mouseover(opacity, .84);
+	@include vendorize(transition, (
+	opacity .5s ease-in-out
+	));
+}
+
+.rotate-90{
+-webkit-transform: rotate(90deg);
+-moz-transform: rotate(90deg);
+-ms-transform: rotate(90deg);
+-o-transform: rotate(90deg);
+transform: rotate(90deg);
+
+}
+
+.quote{
+	font-style: italic;
+}
+
+.attribution{
+	font-style: italic;
+}
+
+.spacing {
+		-webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+	-moz-column-gap: 40px; /* Firefox */
+	column-gap: 40px;
+}
 /* Form input elements */
 
 input, textarea, select {
