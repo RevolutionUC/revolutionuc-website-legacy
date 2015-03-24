@@ -1,7 +1,7 @@
 {
-  "name": "StartupSass",
+  "name": "RevolutionUC",
   "version": "0.0.1",
-  "description": "Small, responsive scaffolding designed to accelerate your web project.",
+  "description": "RevolutionUC - Student Hackathon held at the University of Cincinnati",
   "keywords": [
     "sass",
     "framework",
@@ -10,15 +10,15 @@
     "website",
     "scaffolding"
   ],
-  "author": "Michael Zalla",
+  "author": "Caleb Goodreau, Michael Zalla",
   "license": "MIT",
-  "homepage": "https://github.com/MichaelZalla/StartupSass",
+  "homepage": "https://github.com/CalebGoodreau/RevolutionUC-Website",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MichaelZalla/StartupSass.git"
+    "url": "https://github.com/CalebGoodreau/RevolutionUC-Website.git"
   },
   "bugs": {
-    "url": "https://github.com/MichaelZalla/StartupSass/issues"
+    "url": "https://github.com/CalebGoodreau/RevolutionUC-Website/issues"
   },
   "main": "src/scss/main.scss",
   "scripts": {},
