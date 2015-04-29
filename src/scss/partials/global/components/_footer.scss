@@ -10,13 +10,13 @@
 
 footer {
 
-	.content { padding: 0px 0px;}
+	.content { padding: 2px 2px;}
 
 	/* Branding */
 
 	$brandmark-opacity: 0.84;
 	.ss-footer-branding a {
-		margin-top: 4px;
+		margin-top: 2px;
 		border: 2px solid rgba(black, $brandmark-opacity);
 		opacity: $brandmark-opacity;
 		@include same(width, height, 48px);
@@ -50,9 +50,9 @@ footer {
 		li { display: inline-block; }
 
 		a {
-			margin: 0;
+			margin: 4px;
 			opacity: 0.76;
-			@include same(width, height, 38px);
+			@include same(width, height, 48px);
 			@include vendorize("transition", 0.18s opacity ease-in-out);
 		}
 
