@@ -2,7 +2,6 @@
 RevolutionUC is a student hackathon in which we invite students from across the midwest to partake in a weekend of code, community, and self-improvement.
 Join us to build, learn, and grow together!
 
----
 ## Setup for development
 #### To setup this environment for development for OSX:
 1. install node with either brew (http://brew.sh/) or go to http://nodejs.org
