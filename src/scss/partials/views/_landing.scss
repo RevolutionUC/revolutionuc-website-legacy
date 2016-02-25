@@ -37,6 +37,11 @@
   }
 
   section#submissions {
+    //@include background("../images/photos/expo-bg.jpg");
+    @include background("../images/background/circuit-bg.png");
+  }
+
+  section#registration {
     @include background("../images/photos/expo-bg.jpg");
   }
 
