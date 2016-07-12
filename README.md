@@ -7,12 +7,19 @@ and grow together!
 
 #### To setup this environment for development for OSX:
 
-1. Install Node with either brew (http://brew.sh/) or go to http://nodejs.org
-2. In your terminal run 'npm install -g grunt-cli'
+1. Install Node with either brew (http://brew.sh/) or go to https://nodejs.org
+2. In your terminal run `npm install -g grunt-cli`
 3. Navigate to the root directory `/RevolutionUC-Website`
-4. In the terminal run 'git submodule update --init --recursive'
-5. Then run 'bower install'
-6. Then run 'npm install'
-7. Then 'grunt build'
-8. Navigate to the dist directory and run a simple server
-    * For example `python -m SimpleHTTPServer`
+
+Execute the following commands in the terminal:
+
+```sh
+git submodule update --init --recursive
+bower install
+npm install
+grunt
+```
+
+Navigate to the dist directory and run a simple server
+  * For example `python -m SimpleHTTPServer 4000`
+  * Then navigate to `localhost:4000`
