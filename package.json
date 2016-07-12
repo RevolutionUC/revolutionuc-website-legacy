@@ -1,7 +1,7 @@
 {
-  "name": "RevolutionUC",
+  "name": "RevolutionUC-Website",
   "version": "0.0.1",
-  "description": "RevolutionUC - Student Hackathon held at the University of Cincinnati",
+  "description": "RevolutionUC - Student hackathon held at the University of Cincinnati",
   "keywords": [
     "sass",
     "framework",
@@ -10,15 +10,15 @@
     "website",
     "scaffolding"
   ],
-  "author": "Caleb Goodreau, Michael Zalla",
+  "author": "Caleb Goodreau, Michael Zalla, Dom Farolino",
   "license": "MIT",
-  "homepage": "https://github.com/CalebGoodreau/RevolutionUC-Website",
+  "homepage": "https://github.com/Bearcat-Hackers/RevolutionUC-Website",
   "repository": {
     "type": "git",
-    "url": "https://github.com/CalebGoodreau/RevolutionUC-Website.git"
+    "url": "https://github.com/Bearcat-Hackers/RevolutionUC-Website.git"
   },
   "bugs": {
-    "url": "https://github.com/CalebGoodreau/RevolutionUC-Website/issues"
+    "url": "https://github.com/Bearcat-Hackers/RevolutionUC-Website/issues"
   },
   "main": "src/scss/main.scss",
   "scripts": {},
