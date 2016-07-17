@@ -20,6 +20,4 @@ npm install
 grunt
 ```
 
-Navigate to the dist directory and run a simple server
-  * For example `python -m SimpleHTTPServer 4000`
-  * Then navigate to `localhost:4000`
+Then navigate to `localhost:4000`
