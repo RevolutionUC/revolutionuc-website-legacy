@@ -101,6 +101,15 @@ module.exports = function(grunt) {
 			}}
 		},
 
+		connect: {
+			server: {
+				options: {
+					port: 4000,
+					base: './dist/'
+				}
+			}
+		},
+
 		watch: {
 			grunt: { files: ['Gruntfile.js'] },
 			copy: {
@@ -122,8 +131,9 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-connect');
 	
 	grunt.registerTask('build', ['bower:install', 'concat', 'copy', 'sass']);
-	grunt.registerTask('default', ['watch']);
+	grunt.registerTask('default', ['build', 'connect', 'watch']);
 
 }
