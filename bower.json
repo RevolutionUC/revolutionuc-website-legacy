@@ -28,7 +28,8 @@
     "jquery": "~2.1.1",
     "jquery-waypoints": "~3.0.1",
     "foundation": "~5.4.7",
-    "ScrollIt": "*"
+    "ScrollIt": "*",
+    "SassMixins": "https://github.com/MichaelZalla/SassMixins.git#28255fb57f"
   },
   "resolutions": {
     "jquery": "~2.1.1"
