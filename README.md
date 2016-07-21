@@ -5,7 +5,7 @@ and grow together!
 
 ## Setup for development
 
-#### To setup this environment for development for OSX:
+#### To setup this environment for development for OS X:
 
 1. Install Node with either brew (http://brew.sh/) or go to https://nodejs.org
 2. In your terminal run `npm install -g grunt-cli`
