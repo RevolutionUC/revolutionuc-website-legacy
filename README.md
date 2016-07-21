@@ -14,7 +14,6 @@ and grow together!
 Execute the following commands in the terminal:
 
 ```sh
-git submodule update --init --recursive
 bower install
 npm install
 grunt
