@@ -5,13 +5,13 @@ and grow together!
 
 ## Setup for development
 
-#### To setup this environment for development for OS X:
+#### Setup for OS X:
 
-1. Install Node with either brew (http://brew.sh/) or go to https://nodejs.org
-2. In your terminal run `npm install -g grunt-cli`
-3. Navigate to the root directory `/RevolutionUC-Website`
-
-Execute the following commands in the terminal:
+1. Install Node.js with either [brew](http://brew.sh/), [nvm](https://github.com/creationix/nvm), or go to https://nodejs.org
+2. In your terminal run `npm install -g grunt-cli` and `npm install -g bower`
+3. Clone the repository `git clone https://github.com/Bearcat-Hackers/RevolutionUC-Website.git`
+4. Navigate to the repository `cd RevolutionUC-Website`
+5. Execute the following commands in the terminal:
 
 ```sh
 bower install
@@ -19,4 +19,9 @@ npm install
 grunt
 ```
 
-Then navigate to `localhost:4000`
+6. Then navigate to `localhost:4000`
+
+#### Setup for Windows:
+
+1. Install Node.js with either [nvm-windows](https://github.com/coreybutler/nvm-windows) or go to https://nodejs.org
+2. Follow steps 2-6 in the OS X setup guide
