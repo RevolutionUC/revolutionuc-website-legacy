@@ -9,19 +9,15 @@
   }
 
   section#schedule {
-
-      @include background("../images/background/circuit-bg.jpg");
-
+    @include background("../images/background/circuit-bg.jpg");
   }
 
   section#sponsors {
-
-      @include background("../images/background/circuit-bg-r.jpg");
-
+    @include background("../images/background/circuit-bg.jpg");
   }
 
   section#about {
-    @include background("../images/background/circuit-bg.jpg");
+    @include background("../images/background/circuit-bg.png");
   }
 
   section#about-1 {
@@ -29,7 +25,7 @@
   }
 
   section#about-2 {
-    @include background("../images/background/circuit-bg-r.jpg");
+    @include background("../images/background/circuit-bg.jpg");
   }
 
   section#about-3 {
