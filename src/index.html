@@ -27,7 +27,7 @@
 <body id="landing">
 
   <!-- Site header -->
-  <header id="header" class="fixed dark">
+  <header id="header" class="fixed dark" style="border-bottom:5px solid #C24851;">
     <div class="container">
       <div class="content">
 
@@ -45,21 +45,21 @@
             <div class="container">
               <div class="content dark">
                 <ul>
-                <!--<li>
-                   <a href="https://my.mlh.io/oauth/authorize?client_id=3fbeeaabfd4f9cd25e587df14f7898fb91e21c0264661d0832ac3b25d203fda1&redirect_uri=http%3A%2F%2Frevolutionuc.com%2Fapi%2Fregister_redirect.html&response_type=token">
+                <li>
+                   <a mlh-registration-link>
                     <span class="label">Register</span>
                   </a>
-                </li>-->
+                </li>
                   <li>
                     <a data-scroll-nav="1">
                       <span class="label">About</span>
                     </a>
                   </li>
-                  <!--<li>
+                  <li>
                     <a data-scroll-nav="5">
                       <span class="label">Sponsors</span>
                     </a>
-                  </li>-->
+                  </li>
                   <li>
                     <a data-scroll-nav="6">
                       <span class="label">Submissions</span>
@@ -90,7 +90,10 @@
     <div class="container">
       <div class="content">
         <img src="images/logos/RevUCLogo_LongColor.png" style="padding-top: 30px;">
-        <h1 class="center" style="color: #ffffff; text-shadow: 4px 4px 10px #e02e2e; font-size: 350%;">October 8 - 9, 2016</h1>
+        <h1 class="center" style="color: #ffffff; text-shadow: 1px 1px 50px rgba(224, 46, 46, .5); font-size: 350%;">October 8 - 9, 2016</h1>
+        <a mlh-registration-link class="center">
+          <h1 style="color: #ffffff; text-shadow: 1px 1px 50px rgba(224, 46, 46, .5); font-size: 350%;">Click here to Register</h1>
+        </a>
       </div>
       <div class="content">
         <div class="arrow-down center" data-scroll-nav="1"></div>
@@ -191,56 +194,44 @@
   </section>
 
   <!-- Uncomment when sponsership is completed -->
-  <!--<section id="sponsors" data-scroll-index="5" class="fullscreen dark">
-      <div class="container">
-         <div class="content">
-          <h1 class="center" style="margin-top:0px; margin-bottom:0px;">Hex-Core Sponsors</h1>
-          <a href="https://www.kroger.com/" target="_blank"><img class="center" src="images/sponsors/kroger-tech.png" height="500" width="500" style="border-radius: 7px/7px; margin-bottom: 0px"></a>
+  <section id="sponsors" data-scroll-index="5" class="fullscreen dark">
+    <div class="container">
+      <div class="content">
+        <!-- <h1 class="center" style="margin-top:0px; margin-bottom:0px;">Hex-Core Sponsors</h1>
+        <a href="https://www.kroger.com/" target="_blank"><img class="center" src="images/sponsors/kroger-tech.png" height="500" width="500" style="border-radius: 7px/7px; margin-bottom: 0px"></a>
+      </div>
+      <div class="content" style="margin-top: 0px;">
+        <h2 class="center" style="margin-top: 0px; margin-bottom: 0px;"> Dual-Core Sponsors </h2>
+        <div class="center column small-12">
+          <a href="http://cech.uc.edu/it.html" target="_blank"><img class="center" src="images/sponsors/soit-logo-res.png" height="400" width="400" style="border-radius: 7px/7px;"></a>
         </div>
-        <div class="content" style="margin-top: 0px;">
-          <h2 class="center" style="margin-top: 0px; margin-bottom: 0px;"> Dual-Core Sponsors </h2>
-            <div class="center column small-12">
-              <a href="http://cech.uc.edu/it.html" target="_blank"><img class="center" src="images/sponsors/soit-logo-res.png" height="400" width="400" style="border-radius: 7px/7px;"></a>
-            </div>
-            <div class="center column small-12">
-              <a href="http://www.tcs.com/Pages/default.aspx" target="_blank"><img class="center" src="images/sponsors/tcs-logo.png" height="400" width="400" style="border-radius: 7px/7px;"></a>
-            </div>
-            <h3 class="center"> Single-Core Sponsors </h3>
-            <div class="center column small-6">
-                <a href="http://lisnr.com/" target="_blank" style="margin-top:0px;"><img class="center" src="images/sponsors/lisnr-horiz-trans.png" height="400" width="400"></a>
-            </div>
-            <div class="center column small-6">
-              <a href="http://www.telerik.com/modulus" target="_blank" style="margin-top:0px;"><img class="center" src="images/sponsors/telerik-res.png" height="400" width="400" style="border-radius: 7px/7px;"></a>
-            </div>
-              <h3 class="center column small-12" style="margin:10px;">Our Partners</h3>
-              <div class="center column small-6">
-                <a href="https://mlh.io" target="_blank"><img class="center" src="images/sponsors/mlh-logo-res.png" height="250" width="250"></a>
-              </div>
-              <div class="center column small-6">
-                <a href="http://tribunal.uc.edu/" target="_blank"><img class="center" src="images/sponsors/tribunal-res.png" height="250" width="250"></a>
-            </div>
-          </div>
-          <div class="content" style="margin-top:0px;">
-          <h4 class="center">Interested in sponsoring? Need to know more? Get in touch with us!</h4>
-            <div class="fullscreen row center">
-            <a href="mailto:info@revolutionuc.com" style="margin-top: 0px;" target="_blank"><img class="center" src="images/logos/social-email.png" height="100px" width="100px"></a>
-            </div>
-            <div class="arrow-down-white center" data-scroll-nav="6"></div>
-          </div>
+        <div class="center column small-12">
+          <a href="http://www.tcs.com/Pages/default.aspx" target="_blank"><img class="center" src="images/sponsors/tcs-logo.png" height="400" width="400" style="border-radius: 7px/7px;"></a>
         </div>
-    </section>-->
-
-    <!--<section id="registration" class="fullscreen dark" data-scroll-index="6">
-      <div class="container">
-        <div class="content">
-          <h1 class="center" style="color: #ffffff; text-shadow: 4px 4px 10px #e85950; font-size: 400%;"> Registration Coming Soon... </h1>
-
+        <h3 class="center"> Single-Core Sponsors </h3>
+        <div class="center column small-6">
+          <a href="http://lisnr.com/" target="_blank" style="margin-top:0px;"><img class="center" src="images/sponsors/lisnr-horiz-trans.png" height="400" width="400"></a>
         </div>
-        <div class="content">
-          <div class="arrow-down center" data-scroll-nav="7"></div>
+        <div class="center column small-6">
+          <a href="http://www.telerik.com/modulus" target="_blank" style="margin-top:0px;"><img class="center" src="images/sponsors/telerik-res.png" height="400" width="400" style="border-radius: 7px/7px;"></a>
+        </div> -->
+        <h3 class="center column small-12" style="margin:10px;">Our Partners</h3>
+        <div class="center column small-6">
+          <a href="https://mlh.io" target="_blank"><img class="center" src="images/sponsors/mlh-logo-res.png" height="250" width="250"></a>
+        </div>
+        <div class="center column small-6">
+          <a href="http://tribunal.uc.edu/" target="_blank"><img class="center" src="images/sponsors/tribunal-res.png" height="250" width="250"></a>
         </div>
       </div>
-    </section> -->
+      <div class="content" style="margin-top:0px;">
+        <h4 class="center">Interested in sponsoring? Need to know more? Get in touch with us!</h4>
+        <div class="fullscreen row center">
+          <a href="mailto:info@revolutionuc.com" style="margin-top: 0px;" target="_blank"><img class="center" src="images/logos/social-email.png" height="100px" width="100px"></a>
+        </div>
+        <div class="arrow-down-white center" data-scroll-nav="6"></div>
+      </div>
+    </div>
+  </section>
 
   <section id="submissions" data-scroll-index="6" class="fullscreen dark">
     <div class="container">
@@ -401,7 +392,6 @@
 
   <!-- Dependencies -->
   <script src="./js/vendor/jquery/jquery.min.js"></script>
-  <script src="./js/vendor/jquery/plugins/jquery-waypoints.min.js"></script>
   <script src="./js/vendor/jquery/plugins/jquery-scrollIt.min.js"></script>
 
   <!-- Custom -->
@@ -426,12 +416,8 @@
         topOffset: -1 * $('header').outerHeight()
       });
 
-      var headerWaypoint = new Waypoint({
-        element: document.getElementsByTagName('header'),
-        offset: -250,
-        handler: function() {
-          $('header').toggleClass('minimal');
-        }
+      $('*[mlh-registration-link]').forEach(function(element) {
+        element.href= "https://my.mlh.io/oauth/authorize?client_id=3fbeeaabfd4f9cd25e587df14f7898fb91e21c0264661d0832ac3b25d203fda1&redirect_uri=http%3A%2F%2Frevolutionuc.com%2Fapi%2Fregister_redirect.html&response_type=token";
       });
 
     });
