@@ -1,0 +1,11 @@
+.button {
+    &.button--hero {
+        font-size: 1.1rem;
+        background-color: $color-red;
+        color: #ffffff;
+
+        &:hover {
+            background-color: darken($color-red, 5%);
+        }
+    }
+}
