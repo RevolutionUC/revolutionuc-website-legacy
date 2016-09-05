@@ -417,7 +417,8 @@
         topOffset: -1 * $('header').outerHeight()
       });
 
-      document.querySelectorAll('*[mlh-registration-link]').forEach(function(element) {
+      NodeList.prototype.forEach = Array.prototype.forEach;
+      document.querySelectorAll("*[mlh-registration-link]").forEach(function(element) {
         element.onclick = function(e) {
           window.location = "https://my.mlh.io/oauth/authorize?client_id=5a300044354af100ede90c4416753561ca1918ca4c628787af2bf3f0e79a2db0&redirect_uri=http%3A%2F%2Frevolutionuc.com%2Fapi%2Fregister_redirect.html&response_type=token";
         }
