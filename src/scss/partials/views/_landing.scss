@@ -3,29 +3,15 @@
   .row {  }
 
   section#splash {
-
     @include background("../images/background/revuc-background.jpg");
-
   }
 
-  section#schedule {
-    @include background("../images/background/circuit-bg.jpg");
-  }
-
-  section#sponsors {
-    @include background("../images/background/circuit-bg.jpg");
-  }
-
-  section#about {
+  section#about, section#about-2, section#faq, section#sponsors, section#schedule {
     @include background("../images/background/circuit-bg.jpg");
   }
 
   section#about-1 {
     @include background("../images/photos/collab-bg.jpg");
-  }
-
-  section#about-2 {
-    @include background("../images/background/circuit-bg.jpg");
   }
 
   section#about-3 {
@@ -34,7 +20,6 @@
 
   section#submissions {
     @include background("../images/photos/expo-bg.jpg");
-    //@include background("../images/background/circuit-bg.png");
   }
 
   section#registration {
