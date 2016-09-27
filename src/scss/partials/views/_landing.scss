@@ -22,6 +22,19 @@
     @include background("../images/photos/expo-bg.jpg");
   }
 
+  section#schedule {
+    background: -webkit-linear-gradient(rgba(#313131, 0.75), rgba(#313131, 0.75)), url("../images/photos/students.jpg");
+    background: -moz-linear-gradient(rgba(#313131, 0.75), rgba(#313131, 0.75)), url("../images/photos/students.jpg");
+    background: linear-gradient(rgba(#313131, 0.75), rgba(#313131, 0.75)), url("../images/photos/students.jpg");
+
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+            background-size: cover;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
   section#registration {
     @include background("../images/photos/expo-bg.jpg");
   }
