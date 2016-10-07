@@ -110,7 +110,7 @@ body {
 
 /* Typographic elements */
 
-span, a, .copy {
+span, .copy {
 	&, &:before, &:after {
 		display: inline-block;
 	}
