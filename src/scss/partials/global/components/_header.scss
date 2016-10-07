@@ -44,10 +44,13 @@ header {
 		@include background("../images/logos/revuc-logo-outline.svg", auto 75%, left center);
 		@include mouseout(opacity, 0.8);
 		@include mouseover(opacity, 1);
-
 		@include vendorize(transition, (
-		opacity .5s ease-in-out
+			opacity .5s ease-in-out
 		));
+		
+		&, &:before, &:after {
+			display: inline-block;
+		}
 
 		.label {
 			color: white;
@@ -63,6 +66,12 @@ header {
 		background-color: $color-spot-3;
 		@include vendorize("transition", left 0.18s ease-in-out);
 		a, span { margin-top: 0; }
+		
+		a {
+			&, &:before, &:after {
+				display: inline-block;
+			}
+		}
 	}
 
 	/* Header interaction indicator */

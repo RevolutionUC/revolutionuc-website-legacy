@@ -1,5 +1,21 @@
-.sponsor-wrapper:before,
+.sponsor-image {
+    a {
+        width: 100%;
+    }
+}
+
 .sponsor-image-container {
-    display: inline-block;
-    vertical-align: middle;
+    display: table;
+
+    > .sponsor-image {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    > .sponsor-image,
+    > [class*="sponsor-image"] + [class*="sponsor-image"]:last-child {
+        @media #{$medium-up} {
+            float: none;
+        }
+    }
 }

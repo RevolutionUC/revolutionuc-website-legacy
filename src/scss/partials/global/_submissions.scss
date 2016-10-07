@@ -1,0 +1,7 @@
+.submissions-list {
+    a {
+        &, &:before, &:after {
+            display: inline-block;
+        }
+    }
+}

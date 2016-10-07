@@ -11,6 +11,12 @@
 footer {
 
 	.content { padding: 2px 2px;}
+	
+	a {
+		&, &:before, &:after {
+			display: inline-block;
+		}
+	}
 
 	/* Branding */
 
