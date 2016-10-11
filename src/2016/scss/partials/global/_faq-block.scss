@@ -1,0 +1,19 @@
+.faq-block {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    p {
+        margin: 0;
+
+        a {
+            display: inline;
+            text-decoration: underline;
+            color: darken($color-red, 30%) !important;
+        }
+    }
+}

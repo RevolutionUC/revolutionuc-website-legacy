@@ -1,0 +1,51 @@
+/**
+ * @file main.scss
+ * @author Michael Zalla
+ * @date 11-25-2014
+ *
+ * Bundles all existing Sass components (modules, mixins, and partials)
+ * that are included with the StartupSass style framework.
+ *
+ * Dependencies:
+ *   - Foundation Grid (~5.4.3)
+ */
+
+@charset "utf-8";
+
+/* Foundation by ZURB - foundation.zurb.com (Licensed under MIT Open Source) */
+
+/* Foundation components */
+
+@import "normalize";
+@import "foundation/components/grid";
+
+/* Modules */
+
+@import "modules/config";
+@import "modules/colors";
+
+/* Mixins */
+
+
+// @import "burger";
+@import "../../bower_components/SassMixins/bundle";
+@import "modules/mixins/placeholderText";
+@import "modules/mixins/hamburger";
+
+/* Global Partials */
+
+@import "partials/global/fonts";
+@import "partials/global/typography";
+@import "partials/global/layout";
+@import "partials/global/buttons";
+@import "partials/global/faq-block";
+@import "partials/global/sponsors";
+@import "partials/global/schedule";
+@import "partials/global/submissions";
+
+@import "partials/global/components/header";
+@import "partials/global/components/footer";
+
+/* View Partials */
+
+@import "partials/views/landing";

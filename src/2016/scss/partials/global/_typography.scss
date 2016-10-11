@@ -1,0 +1,225 @@
+/**
+ * @file _typography.scss
+ * @author Michael Zalla
+ * @date 12-01-2014
+ *
+ * Sets up the base typographic styles for content elements such as copy,
+ * headings, and subheadings, as well as some typographic decorator classes.
+ */
+
+/* Typographic layout attributes */
+
+$ss-type-mobile-base-point-size: 18px;
+$ss-type-desktop-base-point-size: 16px;
+$ss-type-base-line-height: 1;
+
+$ss-type-copy-point-size: 1.00rem;
+
+$ss-type-default-font-family: "Ubuntu";
+
+/* Typographic placeholder selectors */
+
+%copy {
+	margin-top: $ss-type-copy-point-size * 1.5;
+	@include typeset($ss-type-copy-point-size, 1.65, 0.0em, $ss-type-default-font-family);
+}
+
+%hide-text {
+	text-indent: -9999px;
+	white-space: nowrap;
+	color: transparent;
+	@include vendorize("outline", none);
+}
+
+%light { color: white; }
+
+.light { @extend %light; }
+
+/* Base typographic styles */
+
+html {
+
+	letter-spacing: 0.0em;
+	font-weight: $font-weight-regular;
+	font-family: $ss-type-default-font-family;
+	line-height: $ss-type-base-line-height;
+
+	// Font smoothing (for supporting browsers)
+	@include vendorize("font-smoothing", antialiased);
+	-moz-osx-font-smoothing: grayscale;
+
+	color: $color-type-default;
+
+}
+
+/* Mobile base point size */
+
+@media #{ $small-only } { html { font-size: $ss-type-mobile-base-point-size; }}
+
+/* Desktop base point size */
+
+@media #{ $medium-up } { html { font-size: $ss-type-desktop-base-point-size; }}
+
+/* Copy */
+
+p, span, a, .copy {
+	&, &:before, &:after {
+		@extend %copy;
+	}
+}
+
+/* Hyperlinks */
+
+a, a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
+	color: $color-spot-2;
+}
+
+a:focus { @include vendorize(outline, none); }
+
+/* Display type */
+h1 {
+	&, &:before, &:after {
+		@extend %copy;
+		line-height: 1.35;
+		font-weight: $font-weight-bold;
+	}
+}
+
+h2 {
+	&, &:before, &:after {
+		@extend %copy;
+		line-height: 1.35;
+		font-weight: $font-weight-semibold;
+	}
+}
+
+h3, h4, h5, h6 {
+	&, &:before, &:after {
+		@extend %copy;
+		line-height: 1.35;
+		font-weight: $font-weight-light;
+	}
+}
+
+h1, h1:before, h1:after { @include same(font-size, margin-top, 2.44rem); }
+h2, h2:before, h2:after { @include same(font-size, margin-top, 2.15rem); }
+h3, h3:before, h3:after { @include same(font-size, margin-top, 1.84rem); }
+h4, h4:before, h4:after { @include same(font-size, margin-top, 1.40rem); }
+h5, h5:before, h5:after { @include same(font-size, margin-top, 1.00rem); }
+h6, h6:before, h6:after { @include same(font-size, margin-top, 0.84rem); }
+
+h4, h4:before, h4:after {
+	font-weight: $font-weight-semibold;
+}
+
+h5, h5:before, h5:after {
+	letter-spacing: 0.065em;
+	font-weight: $font-weight-bold;
+	text-transform: uppercase;
+}
+
+h6, h6:before, h6:after {
+	letter-spacing: 0.115em;
+	font-weight: $font-weight-bold;
+	text-transform: uppercase;
+}
+
+
+/* Headings and Subheadings */
+
+.heading,
+.heading:before,
+.heading:after,
+.subheading,
+.subheading:before,
+.subheading:after {
+	display: block;
+	text-transform: uppercase;
+	font-family: $ss-type-default-font-family;
+}
+
+.heading,
+.heading:before,
+.heading:after {
+	letter-spacing: 0.375em;
+	font-weight: $font-weight-light;
+	font-size: 1.85rem;
+	line-height: 2.5;
+}
+
+.subheading,
+.subheading:before,
+.subheading:after {
+	letter-spacing: 0.135em;
+	font-weight: $font-weight-bold;
+	font-size: 1.0rem;
+	line-height: 1.65;
+}
+
+/* Labels */
+
+.label,
+.label:before,
+.label:after {
+	margin-top: 0.67rem;
+	text-transform: uppercase;
+	@include typeset(0.8rem, 1.5, 0.125em,
+		$ss-type-default-font-family,
+		$font-weight-semibold);
+}
+
+/* Callouts */
+
+.callout,
+.callout:before,
+.callout:after {
+	display: block;
+	font-size: 1.65rem;
+	font-weight: $font-weight-light;
+	line-height: 1.2;
+}
+
+/* Quotes */
+
+.quotes,
+.quotes:before,
+.quotes:after { font-style: italic; }
+
+.quotes:before { margin-right: 2px; content: "\201C"; }
+.quotes:after  {  margin-left: 2px; content: "\201C"; }
+
+/* Forms */
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+
+	@include typeset(
+		1.275rem, 1.3, 0.0em,
+		$ss-type-default-font-family,
+		$font-weight-light);
+
+	color: $color-type-default;
+
+	@include placeholderText(color, $color-gray-2);
+
+	@include vendorize(outline, none);
+
+}
+
+/* Buttons */
+
+button,
+.button {
+
+	margin-top: $ss-type-copy-point-size * 1.5;
+	@include typeset(0.92rem, 1.65, 0.065em,
+		$ss-type-default-font-family, $font-weight-semibold);
+	text-transform: uppercase;
+	@extend %light;
+
+	&:focus { @include vendorize(outline, none); }
+
+}
