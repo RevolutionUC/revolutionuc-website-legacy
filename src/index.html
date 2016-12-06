@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
 
   <!-- Content metadata -->
@@ -34,8 +33,6 @@
   <meta name="twitter:site" content="@revolution_uc">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="/css/startup-sass.min.css?v=0.0.1">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700">
 </head>
 
 <body id="landing">
@@ -44,27 +41,61 @@
     html, body {
       margin: 0;
       padding: 0;
+      height: 100vh;
+      box-sizing: border-box;
+
+      /*background-color: #283744;
+      background-repeat: repeat-y;
+
+      background: -webkit-gradient(linear, left top, right top, from(#1a82f7), to(#2F2727));
+      background: -webkit-linear-gradient(left, #6c89a2, #1a4c84);
+      background: -moz-linear-gradient(left, #6c89a2, #1a4c84);
+      background: -ms-linear-gradient(left, #6c89a2, #1a4c84);
+      background: -o-linear-gradient(left, #6c89a2, #1a4c84);*/
+      background: #fedfba;
+      font-family: sans-serif;
+      font-size: 14px;
+
+      color: #9d354a;
     }
-    body {
-      position: fixed;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
+
+    h1 {
+      font-size: 36px;
     }
-    body > img {
+
+    h3 {
+      font-size: 24px;
+    }
+
+    .center {
       position: absolute;
+      margin: auto;
       top: 0;
-      left: 0;
       right: 0;
       bottom: 0;
-      margin: auto;
-      min-width: 52%;
-      min-height: 50%;
+      left: 0;
+      max-width: 800px;
+    }
+
+    .content {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 20px;
+    }
+
+    a {
+      text-decoration: underline;
+      color: inherit;
     }
   </style>
 
-  <img src="/images/coming-soon.svg" alt="">
+  <div class="center">
+    <div class="content">
+      <h1>Coming soon!</h1>
+      <h3>In the mean time you can check out our 2016 Hackathon site <a href="/2016">here</a></h3>
+    </div>
+  </div>
   <!-- Google Analytics -->
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
