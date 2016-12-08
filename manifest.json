@@ -1,6 +1,6 @@
 {
-  "name": "revolutionUC",
-  "short_name": "revolutionUC",
+  "name": "RevolutionUC",
+  "short_name": "RevolutionUC",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#17E4FF",
