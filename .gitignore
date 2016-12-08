@@ -25,5 +25,3 @@ bower_components
 *.ai
 
 # Project build
-dist
-vendor

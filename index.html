@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>revolutionUC</title>
+
+    <!-- Content metadata -->
+    <meta name="description" content="RevolutionUC - Student Hackathon held at the University of Cincinnati">
+    <meta name="author" content="Dom Farolino (https://github.com/domfarolino">
+
+    <!-- Behavioral metadata -->
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UI-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+
+    <!-- Favicons -->
+    <!-- [if IE]><link rel="shortcut icon" href="favicon.ico?v=0.0.1" /><![endif] -->
+    <link rel="icon" type="image/png" href="/favicon@32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon@16.png" sizes="16x16" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon@180.png">
+
+    <!-- facebook meta -->
+    <meta property="og:title" content="RevolutionUC">
+    <meta property="og:description" content="Student Hackathon held at the University of Cincinnati October 8th and 9th, 2016">
+    <!-- <meta property="og:image" content="https://revolutionuc.com/images/logos/social-card.jpg"> -->
+    <meta property="og:url" content="https://revolutionuc.com/">
+
+    <!-- twitter meta -->
+    <meta name="twitter:title" content="RevolutionUC">
+    <meta name="twitter:description" content="Student Hackathon">
+    <!-- <meta name="twitter:image" content="https://revolutionuc.com/images/logos/social-card.jpg"> -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@revolution_uc">
+
+    <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/icon?family=Source+Code+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="master.css">
+  </head>
+  <body>
+    <div class="overlay"></div>
+
+    <div class="center">
+      <img src="logo.png" width="70%" alt="revolutionUC logo">
+      <h1>spring 2017 hackathon coming soon</h1>
+      <a href="/2016"><h1>2016 hackathon site</h1></a>
+      <!-- <a href="mailto:info@revolutionuc.com"><h1>info@revolutionuc.com</h1></a> -->
+    </div>
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js', {scope: '/'})
+        .then(function(registration) {
+          console.log(`Registration succeeded. Scope is ${registration.scope}`);
+        }).catch(function(error) {
+          console.warn(`Registration failed with ${error}`);
+        });
+      }
+    </script>
+  </body>
+</html>

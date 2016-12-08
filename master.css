@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Code Pro";
+  text-align: center;
+}
+
+html, body {
+  color: white;
+  background: #6d6d6d;
+}
+
+/* overlay idea from:
+  http://stackoverflow.com/questions/20039765/how-to-apply-a-css-3-blur-filter-to-a-background-image
+  http://codepen.io/aniketpant/pen/DsEve
+*/
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(mck.jpg) no-repeat center;
+  background-size: cover;
+  background-position: center;
+  filter: blur(9px) grayscale(100%);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 90%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+h1 {
+  padding: 5px;
+}
+
+a {
+  color: inherit;
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 16px;
+  }
+}
