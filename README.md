@@ -1,4 +1,9 @@
-# RevolutionUC-Website
+# revolutionuc-website-legacy
+
+The following instructions are deprecated since the static landing page has been deployed
+
+----
+
 RevolutionUC is a student hackathon in which we invite students from across the midwest
 to partake in a weekend of code, community, and self-improvement. Join us to build, learn,
 and grow together!
